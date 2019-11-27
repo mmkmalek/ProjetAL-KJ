@@ -1,12 +1,18 @@
+from tkinter import *
+
 import tkinter as tk
 
 interface = tk.Tk()
+
 
 titre = tk.Label(interface, text="projet de conception")
 titre.pack()
 
 fenetre = tk.Canvas(interface, height=600,width=600)
 fenetre.pack()
+
+test=PhotoImage(file ="SVM.png")
+fenetre.create_image(70,70, image=test, anchor=NW)
 
 boutton1= tk.Button(interface, text="Envoyer email",fg='green')
 boutton1.pack(side ='left')
