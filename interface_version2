@@ -1,0 +1,19 @@
+import tkinter as tk
+
+interface = tk.Tk()
+
+titre = tk.Label(interface, text="projet de conception")
+titre.pack()
+
+fenetre = tk.Canvas(interface, height=600,width=600)
+fenetre.pack()
+
+boutton1= tk.Button(interface, text="Envoyer email",fg='green')
+boutton1.pack(side ='left')
+
+boutton2= tk.Button(interface, text="Quitter",fg='red')
+boutton2.pack(side ='right')
+
+
+
+interface.mainloop()
