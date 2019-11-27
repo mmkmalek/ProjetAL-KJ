@@ -1,0 +1,19 @@
+from tkinter import Tk, Label, Button
+
+class INTERFACE:
+    def __init__(self, master):
+        self.master = master
+
+        self.email_button = Button(master, text="Email")
+        self.email_button.pack()
+
+        self.quit_button = Button(master, text="Quitter", command=master.quit)
+        self.quit_button.pack()
+
+        
+
+root = Tk()
+my_gui = INTERFACE(root)
+root.geometry('700x300')
+root.title('Projet de conception - Architecture des logiciels')
+root.mainloop()
